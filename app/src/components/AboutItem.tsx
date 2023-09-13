@@ -1,5 +1,4 @@
 import {ReactElement} from 'react'
-import {BsCheck2Circle} from 'react-icons/bs'
 
 type props = {
     children: string | ReactElement
@@ -7,8 +6,8 @@ type props = {
 
 export default function AboutItem({children}: props) {
   return (
-    <li className="flex gap-2 items-center">
-        <BsCheck2Circle className='w-4 h-4 text-green-500'/>
+    <li className="flex gap-2 items-center border-l-4 border-blue-secundary pl-1.5">
+        
         <p>{children}</p>
     </li>
   )

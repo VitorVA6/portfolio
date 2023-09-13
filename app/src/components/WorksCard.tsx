@@ -16,7 +16,7 @@ export default function WorksItem({title, icon, text, textButton}: props) {
         <h2 className='font-medium text-xl'>{title}</h2>
         <p className='mb-2'>{text}</p>
         <div className="w-full">
-          <button className="py-3 bg-blue-secundary text-white font-medium w-full rounded-sm mb-3">Ver Código</button>
+          <button className="py-3 bg-blue-secundary text-blue-950 font-medium w-full rounded-sm mb-3">Ver Código</button>
           <button className="py-3 border-2 border-blue-secundary text-blue-secundary font-medium w-full rounded-sm">{textButton}</button>
         </div>
     </div>

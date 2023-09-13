@@ -1,8 +1,8 @@
 export default function Header() {
   return (
-    <header className="flex justify-between py-6 px-40 items-center absolute w-full text-white">
-        <h1 className="text-[28px] cursor-pointer flex items-center">
-            <span className="py-0.5 px-2 font-bold bg-blue-primary rounded-md mr-2 text-2xl">V</span>
+    <header className="flex justify-between h-20 px-40 items-center absolute w-full text-white">
+        <h1 className="text-[28px] cursor-pointer flex items-center font-bold">
+            <span className="py-0.5 px-2 bg-blue-primary rounded-md mr-2 text-2xl">V</span>
             Vitor
         </h1>
         <nav className="flex gap-12 font-medium items-center">
