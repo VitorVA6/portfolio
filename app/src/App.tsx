@@ -1,9 +1,10 @@
 import './App.css'
+import Main from './pages/Main'
 
 function App() {
   return (
     <>
-      <h1 className='text-red-500'>Ola</h1>
+      <Main />
     </>
   )
 }
