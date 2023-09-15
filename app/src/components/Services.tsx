@@ -6,9 +6,9 @@ import GlowingIcon from './GlowingIcon'
 
 export default function Services() {
   return (
-    <div className='flex flex-col py-16 px-40 gap-12 w-full bg-gray-900 text-gray-100'>
-        <Title textSize='text-3xl' w='w-1/2' marginB='mb-1'>Serviços</Title>
-        <div className='grid grid-cols-3 gap-8'>
+    <div className='flex flex-col py-12 lg:py-16 px-5 md:px-10 xl:px-40 gap-8 lg:gap-12 w-full text-gray-100'>
+        <Title textSize='text-[26px] lg:text-3xl' w='w-1/2' marginB='mb-0.5 lg:mb-1'>Serviços</Title>
+        <div className='grid-cols-3 gap-8 hidden md:grid'>
             <SkillCard 
                 title={'Front-end'} 
                 icon={<GlowingIcon icon={<FaReact className='w-16 h-16 text-sky-300 mb-2 relative z-50'/>}/>} 

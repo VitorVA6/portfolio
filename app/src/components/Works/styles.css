@@ -7,24 +7,13 @@
   }
   
 .swiper-pagination {
-width: 15rem;
-}
-  
-.next-element {
-transform: translateX(10vw);
-padding: 10px;
-background-color: blue;
+  width: 15rem;
 }
 
-.prev-element{
-transform: translateX(-10vw);
-padding: 10px;
-background-color: blue;
-}
 .swiper-pagination .swiper-pagination-bullet {
     background: #9ca3af;
   }
   
-  .swiper-pagination .swiper-pagination-bullet-active {
-    background: #1d4ed8;
-  }
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #1d4ed8;
+}

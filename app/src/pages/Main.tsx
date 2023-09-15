@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 export default function Main() {
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-900">
         <Header />
         <Home />
         <About />
