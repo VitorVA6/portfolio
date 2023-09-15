@@ -1,9 +1,9 @@
-import Title from "./Title";
-import WorksCard from './WorksCard'
-
+import Title from "../Title";
+import WorksCard from '../WorksCard'
 import {Swiper, SwiperSlide, SwiperProps} from "swiper/react";
 import {  Navigation, EffectCoverflow, Pagination } from "swiper/modules";
 
+import './styles.css'
 import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -25,7 +25,9 @@ export default function Works() {
             {...swiperProps} 
             modules={[ Navigation, EffectCoverflow, Pagination]}
             navigation
-            pagination
+            pagination = {{
+                el: '.swiper-pagination'
+            }}
             centeredSlides
             loop
             coverflowEffect={{
@@ -39,7 +41,6 @@ export default function Works() {
         >
             <SwiperSlide className="">
                 <WorksCard
-
                     title="Ecommerce" 
                     text="Ecommerce profissional, com sistema de pagamento via Mercado Pago, integração com Correios, layout moderno e responsivo. Contém funções de cadastro e edição de produtos, categorias, variações, estilização das cores, fontes e opções de layout."
                 
@@ -87,6 +88,10 @@ export default function Works() {
                     
                 />
             </SwiperSlide>
+            <div className="slider-controler">
+                <div className="swiper-pagination"/>
+            </div>
+            
         </Swiper>
     </div>
   )

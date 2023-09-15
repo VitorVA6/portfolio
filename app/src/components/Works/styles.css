@@ -1,0 +1,30 @@
+.slider-controler {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+.swiper-pagination {
+width: 15rem;
+}
+  
+.next-element {
+transform: translateX(10vw);
+padding: 10px;
+background-color: blue;
+}
+
+.prev-element{
+transform: translateX(-10vw);
+padding: 10px;
+background-color: blue;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    background: #9ca3af;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background: #1d4ed8;
+  }
