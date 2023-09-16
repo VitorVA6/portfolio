@@ -1,6 +1,7 @@
 import {FiMenu} from 'react-icons/fi'
 import Menu from './Menu'
 import {useState} from 'react'
+import NavButton from './NavButton'
 
 export default function Header() {
 
@@ -14,10 +15,10 @@ export default function Header() {
             Vitor
         </h1>
         <nav className="gap-12 font-medium items-center hidden md:flex">
-            <h3 className="cursor-pointer text-blue-primary">Início</h3>
-            <h3 className="cursor-pointer">Sobre mim</h3>
-            <h3 className="cursor-pointer">Habilidades</h3>
-            <h3 className="cursor-pointer">Trabalhos</h3>
+            <NavButton text='Início'/>
+            <NavButton text='Sobre mim'/>
+            <NavButton text='Habilidades'/>
+            <NavButton text='Trabalhos'/>
             <button className="hidden lg:block border border-blue-primary text-blue-primary rounded-md px-5 py-2.5">Contate-me</button>
         </nav>
         <FiMenu 
