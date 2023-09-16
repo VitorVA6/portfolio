@@ -4,6 +4,7 @@ import {BsGithub, BsLinkedin} from 'react-icons/bs'
 export default function Home() {
   return (
     <div 
+        id='home'
         className="flex flex-col items-center justify-center w-full h-screen text-white bg-cover bg-no-repeat bg-[url('images/bg_portfolio.jpg')]"
     >
         <img 
@@ -22,7 +23,7 @@ export default function Home() {
             <BsLinkedin className = 'w-7 h-7 cursor-pointer'/>
         </div>
         <div className='relative'>
-          <div className='px-12 py-3 bg-blue-secundary rounded-md absolute blur inset-0'/>
+          <div className='opacity-70 px-12 py-3 bg-blue-secundary rounded-md absolute blur inset-0'/>
           <button className='text-sm lg:text-base px-12 py-3 bg-gray-900 rounded-md relative font-medium text-blue-secundary'>Download CV</button>
         </div>
     </div>

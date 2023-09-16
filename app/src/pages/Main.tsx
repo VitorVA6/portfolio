@@ -4,6 +4,7 @@ import About from "../components/About";
 import Services from "../components/Services";
 import Works from "../components/Works";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 export default function Main() {
   return (
@@ -13,6 +14,7 @@ export default function Main() {
         <About />
         <Services />
         <Works />
+        <Contact />
         <Footer />
     </div>
   )

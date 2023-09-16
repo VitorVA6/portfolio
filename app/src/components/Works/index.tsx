@@ -46,7 +46,9 @@ export default function Works() {
     }, [] )
 
   return (
-    <div className='flex flex-col pb-12 pt-0 lg:py-8 xl:py-16 px-5 md:px-10 xl:px-20 2xl:px-40 gap-12 lg:gap-20 w-full text-gray-100'>
+    <div 
+        id="projects"
+        className='flex flex-col pb-12 pt-0 lg:py-8 xl:py-16 px-5 md:px-10 xl:px-20 2xl:px-40 gap-12 lg:gap-20 w-full text-gray-100'>
         <Title textSize='text-[26px] lg:text-3xl' w='w-1/2' marginB='mb-0.5 lg:mb-1'>Trabalhos</Title>
         <Swiper 
             className="w-full"

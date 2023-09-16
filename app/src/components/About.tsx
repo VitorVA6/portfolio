@@ -6,7 +6,9 @@ import Title from './Title'
 
 export default function About() {
   return (
-    <div className="flex flex-col py-12 lg:py-16 px-5 md:px-10 xl:px-20 2xl:px-40 gap-8 lg:gap-12 w-full text-gray-100">
+    <div
+        id='about' 
+        className="flex flex-col py-12 lg:py-16 px-5 md:px-10 xl:px-20 2xl:px-40 gap-8 lg:gap-12 w-full text-gray-100">
         <Title textSize='text-[26px] lg:text-3xl' w='w-1/2' marginB='mb-0.5 lg:mb-1'>Sobre mim</Title>
         <div className='flex flex-col lg:flex-row lg:gap-6 xl:gap-12 items-center'>
             <img 
