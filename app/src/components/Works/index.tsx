@@ -6,11 +6,6 @@ import {useState, useEffect} from 'react'
 import checkResponsive from "../../utils/checkResponsive";
 
 import './styles.css'
-import 'swiper/css'
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
-
 
 export default function Works() {
 
@@ -36,7 +31,7 @@ export default function Works() {
             const query = checkResponsive(window.innerWidth)
             if(query === 'SM') setSlideSettings({perView: 1, stretch: 50, depth: 100})
             if(query === 'MD') setSlideSettings({perView: 1.5, stretch: 80, depth: 80})
-            if(query === 'LG') setSlideSettings({perView: 2, stretch: 100, depth: 120})
+            if(query === 'LG') setSlideSettings({perView: 1.7, stretch: 80, depth: 120})
             if(query === 'XL') setSlideSettings({perView: 2, stretch: 100, depth: 120})
             if(query === '2XL') setSlideSettings({perView: 2.1, stretch: 120, depth: 130})
         }
@@ -51,7 +46,7 @@ export default function Works() {
     }, [] )
 
   return (
-    <div className='flex flex-col py-12 lg:py-16 px-5 md:px-10 xl:px-40 gap-12 lg:gap-20 w-full text-gray-100'>
+    <div className='flex flex-col pb-12 pt-0 lg:py-8 xl:py-16 px-5 md:px-10 xl:px-20 2xl:px-40 gap-12 lg:gap-20 w-full text-gray-100'>
         <Title textSize='text-[26px] lg:text-3xl' w='w-1/2' marginB='mb-0.5 lg:mb-1'>Trabalhos</Title>
         <Swiper 
             className="w-full"
@@ -75,7 +70,7 @@ export default function Works() {
             <SwiperSlide>
                 <WorksCard
                     title="Ecommerce" 
-                    text="Ecommerce profissional, com sistema de pagamento via Mercado Pago, integração com Correios, layout moderno e responsivo. Cadastro e edição de produtos, categorias, variações, estilização das cores, fontes e etc."
+                    text="Ecommerce profissional, com sistema de pagamento via Mercado Pago, integração com Correios, layout moderno e responsivo. Cadastro e edição de produtos, categorias, variações, estilização das cores, fontes, banners e etc."
                 
                 />
             </SwiperSlide>
