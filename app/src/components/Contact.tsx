@@ -8,7 +8,9 @@ import contactImg from '../images/contact.svg'
 export default function Contact() {
 
   return (
-    <div className='flex flex-col pb-12 pt-0 lg:pt-8 xl:py-12 px-5 md:px-10 xl:px-20 2xl:px-40 gap-8 lg:gap-12 w-full text-gray-100 relative mb-8 lg:mb-20'>
+    <div 
+        id='contact' 
+        className='flex flex-col pt-12 pb-0 lg:pt-8 xl:py-12 px-5 md:px-10 xl:px-20 2xl:px-40 gap-8 lg:gap-12 w-full text-gray-100 relative mb-8 lg:mb-20'>
         <Title textSize='text-[26px] lg:text-3xl' w='w-1/2' marginB='mb-0.5 lg:mb-1'>Entre em contato</Title>
         <div className='flex flex-col lg:flex-row gap-4 lg:gap-16 w-full items-center lg:items-start'>
             <img 

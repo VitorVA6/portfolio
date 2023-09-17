@@ -32,7 +32,7 @@ export default function Services() {
   return (
     <div 
         id='skills'
-        className='flex flex-col pb-12 pt-0 lg:pt-8 xl:py-12 px-5 md:px-10 xl:px-20 2xl:px-40 gap-8 lg:gap-12 w-full text-gray-100'>
+        className='flex flex-col pt-12 pb-0 lg:pt-8 xl:py-12 px-5 md:px-10 xl:px-20 2xl:px-40 gap-8 lg:gap-12 w-full text-gray-100'>
         <Title textSize='text-[26px] lg:text-3xl' w='w-1/2' marginB='mb-0.5 lg:mb-1'>Serviços</Title>
         <Swiper
           modules={[Pagination]}

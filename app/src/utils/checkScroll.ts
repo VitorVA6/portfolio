@@ -2,9 +2,8 @@ export default function checkScroll(id:string):boolean {
     const div:HTMLElement | null = document.getElementById(id);
     if (div) {
         const rect = div.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
         
-        if (rect.top >= 0 && rect.bottom <= windowHeight) {
+        if (rect.top <= 1 && rect.bottom >= 5) {
             return true;
         } 
         return false;
