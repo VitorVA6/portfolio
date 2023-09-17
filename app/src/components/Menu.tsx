@@ -35,7 +35,7 @@ export default function Menu({menu}: menuProps) {
           };
     }, [])
     
-    
+    //test
     return (
     <div className={`flex md:hidden flex-col bg-gray-800 w-fit items-center h-fit fixed right-3 rounded-lg px-3 py-4 gap-5 top-1/3 z-50 text-gray-400 ${menu ? 'translate-x-0' : 'translate-x-20'} transition-transform duration-300`}>
         <AiOutlineHome 
