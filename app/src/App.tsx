@@ -1,4 +1,5 @@
 import './App.css'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Main from './pages/Main'
 import  {register} from 'swiper/element-bundle'
 import 'swiper/css'
@@ -10,9 +11,11 @@ register()
 
 function App() {
   return (
-    <>
-      <Main />
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Main />}/>
+      </Routes>
+    </Router>
   )
 }
 

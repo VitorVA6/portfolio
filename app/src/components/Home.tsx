@@ -1,5 +1,7 @@
 import perfilImg from '../images/perfil.jpg'
 import {BsGithub, BsLinkedin} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+import pdf from '../assets/curriculo.pdf'
 
 export default function Home() {
   return (
@@ -23,8 +25,14 @@ export default function Home() {
             <BsLinkedin className = 'w-7 h-7 cursor-pointer'/>
         </div>
         <div className='relative'>
-          <div className='opacity-70 px-12 py-3 bg-blue-secundary rounded-md absolute blur inset-0'/>
-          <button className='text-sm lg:text-base px-12 py-3 bg-gray-900 rounded-md relative font-medium text-blue-secundary'>Download CV</button>
+          <div className='opacity-100 md:opacity-70 px-12 py-3 bg-blue-secundary rounded-md absolute blur inset-0'/>
+          <Link 
+            className='block text-sm lg:text-base px-12 py-3 bg-gray-900 rounded-md relative font-medium text-blue-secundary'
+            to={pdf}
+            target='blank'
+          >
+              Download CV
+          </Link>
         </div>
     </div>
   )
