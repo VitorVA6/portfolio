@@ -25,7 +25,7 @@ export default function Home() {
             <BsLinkedin className = 'w-7 h-7 cursor-pointer'/>
         </div>
         <div className='relative'>
-          <div className='opacity-100 md:opacity-70 px-12 py-3 bg-blue-secundary rounded-md absolute blur inset-0'/>
+          <div className='opacity-100 md:opacity-60 px-12 py-3 bg-blue-secundary rounded-md absolute blur inset-0'/>
           <Link 
             className='block text-sm lg:text-base px-12 py-3 bg-gray-900 rounded-md relative font-medium text-blue-secundary'
             to={pdf}

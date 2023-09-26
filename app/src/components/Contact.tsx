@@ -2,10 +2,43 @@ import Title from './Title'
 import TextInput from './TextInput'
 import {GoMail} from 'react-icons/go'
 import {AiOutlineUser} from 'react-icons/ai'
-import {MdSubject} from 'react-icons/md'
 import contactImg from '../images/contact.svg'
+import { useState, FormEvent } from 'react'
+import emailjs from '@emailjs/browser'
+import notifies from "../utils/notify";
+import LoadingButton from './LoadingButton'
 
 export default function Contact() {
+
+    const [name, setName] = useState<string>('')
+    const [email, setEmail] = useState<string>('')
+    const [message, setMessage] = useState<string>('')
+    const [loading, setLoading] = useState<boolean>(false)
+
+    const templateParams = {
+        from_name: name,
+        message: message,
+        email: email
+    }
+
+    function handleSubmit(ev: FormEvent):void{
+        ev.preventDefault()
+        if(name.length > 0 && email.length > 0 && message.length > 0){
+            setLoading(true)
+            emailjs.send('service_htrqce6', 'template_6sorvgk', templateParams, 'pjGq6epu8IWu7EZNw')
+            .then(() => {
+                setLoading(false)
+                setEmail('')
+                setName('')
+                setMessage('')
+                notifies.sucess('E-mail enviado com sucesso')
+            })
+            .catch(() => {
+                setLoading(false)
+                notifies.error('Falha no envio do e-mail')})
+        }
+        else notifies.error('Preencha todos os campos')
+    }
 
   return (
     <div 
@@ -18,34 +51,34 @@ export default function Contact() {
                 alt="imagem de contato" 
                 className='w-[320px] h-[350px] lg:w-[420px] lg:h-[470px] xl:w-[500px] xl:h-[500px] 2xl:w-[540px] 2xl:h-[540px] lg:absolute lg:right-6 xl:right-16 2xl:right-36 lg:top-10 xl:top-14 2xl:top-12'
             />
-            <div className='flex flex-col gap-3 lg:gap-4 col-span-3 w-full lg:w-[55%] xl:w-1/2'>
+            <form 
+                className='flex flex-col gap-3 lg:gap-4 col-span-3 w-full lg:w-[55%] xl:w-1/2'
+                onSubmit={handleSubmit}
+            >
                 <h3 className='text-lg font-medium mb-2'>Envie-nos uma mensagem</h3>
                 <TextInput 
                     icon={<GoMail className='w-[26px] h-[26px] mx-3.5 text-gray-500 peer-focus:text-blue-secundary'/>}
                     placeHolder='Digite seu e-mail'
                     kind='text'
+                    val={email}
+                    setVal={setEmail}
                 />
                 <TextInput 
                     icon={<AiOutlineUser className='w-7 h-7 mx-3.5 text-gray-500 peer-focus:text-blue-secundary'/>}
                     placeHolder='Digite seu nome'
                     kind='text'
-                />
-                <TextInput 
-                    icon={<MdSubject className='w-7 h-7 mx-3.5 text-gray-500 peer-focus:text-blue-secundary'/>}
-                    placeHolder='Digite o assunto'
-                    kind='text'
+                    val={name}
+                    setVal={setName}
                 />
                 <textarea
                     placeholder='Digite a mensagem'
                     className='bg-gray-800 rounded-md py-2.5 px-4 resize-none outline-none outline-offset-0 focus:outline-2 focus:outline-blue-secundary'
                     rows={3}
+                    value={message}
+                    onChange={(ev) => setMessage(ev.target.value)}
                 />
-                <button 
-                    className={`border border-blue-secundary text-blue-secundary rounded-md px-8 py-2.5 w-fit mt-3`}
-                >
-                    Enviar Mensagem
-                </button>
-            </div>
+                <LoadingButton text='Enviar Mensagem' loading={loading}/>
+            </form>
         </div>
     </div>
   )
