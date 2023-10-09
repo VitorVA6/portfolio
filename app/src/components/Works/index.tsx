@@ -71,7 +71,7 @@ export default function Works() {
         >
             <SwiperSlide>
                 <WorksCard
-                    title="Ecommerce" 
+                    title="Ecommerce - Artigos Decor" 
                     text="Ecommerce profissional, com sistema de pagamento via Mercado Pago, integração com Correios, layout moderno e responsivo. Cadastro e edição de produtos, categorias, variações, estilização das cores, fontes, banners e etc."
                 
                 />
@@ -92,8 +92,8 @@ export default function Works() {
             </SwiperSlide>
             <SwiperSlide>
                 <WorksCard 
-                    title="Army lover" 
-                    text="Esse trabalho é uma das partes que compõem o meu TCC. Consiste em realizar a classificação automática de imagens radiográficas do peito em 3 diferentes classes: Covid-19, Non-convid e Normal, com Redes Neurais Convolucionais."
+                    title="Portfólio" 
+                    text="Portfólio desenvolvido com o intuito de mostrar os projetos que tenho desenvolvido e as tecnologias que domino. O site foi desenvolvido em React com o framework Vite, utilizando a linguagem Typescript e o Tailwind para estilização dos componentes."
                     
                 />
             </SwiperSlide>

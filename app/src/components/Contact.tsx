@@ -55,7 +55,7 @@ export default function Contact() {
                 className='flex flex-col gap-3 lg:gap-4 col-span-3 w-full lg:w-[55%] xl:w-1/2'
                 onSubmit={handleSubmit}
             >
-                <h3 className='text-lg font-medium mb-2'>Envie-nos uma mensagem</h3>
+                <h3 className='text-lg font-medium mb-2'>Envie-me uma mensagem</h3>
                 <TextInput 
                     icon={<GoMail className='w-[26px] h-[26px] mx-3.5 text-gray-500 peer-focus:text-blue-secundary'/>}
                     placeHolder='Digite seu e-mail'
