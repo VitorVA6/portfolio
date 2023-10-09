@@ -73,51 +73,48 @@ export default function Works() {
                 <WorksCard
                     title="Ecommerce - Artigos Decor" 
                     text="Ecommerce profissional, com sistema de pagamento via Mercado Pago, integração com Correios, layout moderno e responsivo. Cadastro e edição de produtos, categorias, variações, estilização das cores, fontes, banners e etc."
-                
+                    repository_link="https://github.com/VitorVA6/eCommerce-ArtigosDecor"
+                    app_link="https://artigosdecor.onrender.com/"
+                    project_image="/ecommerce.png"
                 />
             </SwiperSlide>
             <SwiperSlide>
                 <WorksCard 
                     title="Segmentador de imagens" 
                     text="Esse trabalho é uma das partes que compõem o meu TCC. Consiste em realizar a segmentação automática da região pulmonar de imagens radiográficas do peito, utilizando Redes Neurais Convolucionais, sendo elas: U-net e ResUnet."
-                    
+                    repository_link="https://colab.research.google.com/drive/18ndQioKswNWpvzl4n4nODtPIsfeHhYSZ#scrollTo=V1FaEDHJ2s1z"
+                    app_link="/tcc.pdf"
+                    project_image="/image_segment.png"
                 />
             </SwiperSlide>
             <SwiperSlide>
                 <WorksCard 
                     title="Detector de COVID-19" 
                     text="Esse trabalho é uma das partes que compõem o meu TCC. Consiste em realizar a classificação automática de imagens radiográficas do peito em 3 diferentes classes: Covid-19, Non-convid e Normal, com Redes Neurais Convolucionais."
-                    
+                    repository_link="https://colab.research.google.com/drive/1d4bN9J78y7SNgbeYrFTAEmtzgGwJ97F5"
+                    app_link="/tcc.pdf"
+                    project_image="/image_class.png"
                 />
             </SwiperSlide>
             <SwiperSlide>
                 <WorksCard 
                     title="Portfólio" 
                     text="Portfólio desenvolvido com o intuito de mostrar os projetos que tenho desenvolvido e as tecnologias que domino. O site foi desenvolvido em React com o framework Vite, utilizando a linguagem Typescript e o Tailwind para estilização dos componentes."
-                    
+                    repository_link="https://github.com/VitorVA6/portfolio"
+                    app_link="https://vitordev.vercel.app/"
+                    project_image="/portfolio.png"
                 />
             </SwiperSlide>
             <SwiperSlide>
                 <WorksCard 
-                    title="Shopee total" 
-                    text="Esse trabalho é uma das partes que compõem o meu TCC. Consiste em realizar a classificação automática de imagens radiográficas do peito em 3 diferentes classes: Covid-19, Non-convid e Normal, com Redes Neurais Convolucionais."
-                    
+                    title="IoT - MQTT" 
+                    text="Aplicação desenvolvida em Python, C e C++, cujo objetivo é realizar o gerenciamento de sensores digitais e analógicos via Wifi utilizando o protocolo MQTT. A partir de uma placa Raspberry Pi e uma ESP8266, é possível monitorar via smartphone ou PC sensores de temperatura, ascender lâmpadas e etc."
+                    repository_link="https://github.com/VitorVA6/IoT_MQTT"
+                    app_link=""
+                    project_image="/iot-mqtt.png"
                 />
             </SwiperSlide>
-            <SwiperSlide>
-                <WorksCard 
-                    title="Muy crazy" 
-                    text="Esse trabalho é uma das partes que compõem o meu TCC. Consiste em realizar a classificação automática de imagens radiográficas do peito em 3 diferentes classes: Covid-19, Non-convid e Normal, com Redes Neurais Convolucionais."
-                    
-                />
-            </SwiperSlide>
-            <SwiperSlide>
-                <WorksCard 
-                    title="Muy crazy" 
-                    text="Esse trabalho é uma das partes que compõem o meu TCC. Consiste em realizar a classificação automática de imagens radiográficas do peito em 3 diferentes classes: Covid-19, Non-convid e Normal, com Redes Neurais Convolucionais."
-                    
-                />
-            </SwiperSlide>
+       
             <div className="slider-controler">
                 <div className="swiper-pagination"/>
             </div>

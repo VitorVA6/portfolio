@@ -2,6 +2,7 @@ import perfilImg from '../images/perfil.jpg'
 import {BsGithub, BsLinkedin} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import pdf from '../assets/curriculo.pdf'
+import IconButton from './IconButton'
 
 export default function Home() {
   return (
@@ -21,8 +22,12 @@ export default function Home() {
         </div>
         <h2 className='mb-6 text-sm md:text-lg lg:text-base xl:text-xl'>Freelancer e Desenvolvedor Web Fullstack</h2>
         <div className='flex gap-5 mb-8'>
-            <BsGithub className = 'w-7 h-7 cursor-pointer'/>
-            <BsLinkedin className = 'w-7 h-7 cursor-pointer'/>
+            <IconButton link='https://github.com/VitorVA6'>
+              <BsGithub className = 'w-7 h-7 cursor-pointer'/>
+            </IconButton>
+            <IconButton link='https://www.linkedin.com/in/vitor-vaz-andrade-2a2ba0218/'>
+              <BsLinkedin className = 'w-7 h-7 cursor-pointer'/>
+            </IconButton>
         </div>
         <div className='relative'>
           <div className='opacity-100 md:opacity-60 px-12 py-3 bg-blue-secundary rounded-md absolute blur inset-0'/>
