@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div 
         id='home'
-        className="flex flex-col items-center justify-center w-full h-screen text-white bg-cover bg-no-repeat bg-[url('images/bg_portfolio.jpg')]"
+        className="flex flex-col items-center justify-center w-full h-screen text-white bg-cover bg-no-repeat bg-[url('images/bg_portfolio.webp')]"
     >
         <img 
             src={perfilImg} 
