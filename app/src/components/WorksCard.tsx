@@ -10,6 +10,10 @@ type props = {
 
 export default function WorksItem({title, text, repository_link, app_link, project_image}: props) {
 
+  function handleClick(ev: React.MouseEvent<HTMLAnchorElement, MouseEvent>){
+    if (app_link === '') ev.preventDefault()
+  }
+
   return (
     <div 
       className='flex flex-col items-center bg-blue-900 gap-4 md:h-[360px] lg:h-[460px] xl:h-[500px] relative rounded-md'
@@ -26,12 +30,15 @@ export default function WorksItem({title, text, repository_link, app_link, proje
             <div className='flex gap-4 justify-center'>
               <Link 
                 to={app_link}
+                onClick={handleClick}
+                target='blank'
                 className={`flex justify-center transition-transform duration-300 text-white lg:w-1/3 px-5 h-fit rounded-md font-medium ${app_link==='' && 'opacity-30 cursor-default'}`}
               >
                 Aplicação
               </Link>
               <Link 
                 to={repository_link}
+                target='blank'
                 className={`flex justify-center transition-transform duration-300 text-white lg:w-1/3 px-5 h-fit rounded-md font-medium ${repository_link==='' && 'opacity-30 cursor-default'}`}
               >
                 Repositório

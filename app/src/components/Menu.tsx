@@ -1,4 +1,4 @@
-import {AiOutlineHome} from 'react-icons/ai'
+import {AiOutlineHome, AiOutlineClose} from 'react-icons/ai'
 import {BsPersonCircle, BsClipboardData} from 'react-icons/bs'
 import {IoSettingsOutline} from 'react-icons/io5'
 import {GoMail} from 'react-icons/go'
@@ -7,10 +7,11 @@ import checkScroll from '../utils/checkScroll'
 import scrollTo from '../utils/scrollTo'
 
 type menuProps = {
-    menu: boolean
+    menu: boolean,
+    setMenu: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function Menu({menu}: menuProps) {
+export default function Menu({menu, setMenu}: menuProps) {
 
   const [inHome, setInHome] = useState<boolean>(true)
   const [inAbout, setInAbout] = useState<boolean>(true)
@@ -38,6 +39,10 @@ export default function Menu({menu}: menuProps) {
     //test
     return (
     <div className={`flex md:hidden flex-col bg-gray-800 w-fit items-center h-fit fixed right-3 rounded-lg px-3 py-4 gap-5 top-1/3 z-50 text-gray-400 ${menu ? 'translate-x-0' : 'translate-x-20'} transition-transform duration-300`}>
+        <AiOutlineClose 
+          className='h-6 w-6 absolute -top-10 text-white'
+          onClick = {() => setMenu(false)}
+        />
         <AiOutlineHome 
           className={`h-7 w-7 ${inHome && 'text-blue-primary'}`}
           onClick = {() => {scrollTo('home')}}

@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className={`flex justify-between h-20 px-5 md:px-10 xl:px-20 2xl:px-40 items-center absolute bg-transparent w-full text-white z-50`}>
-        <Menu menu={menu}/>
+        <Menu menu={menu} setMenu={setMenu}/>
         <h1 className="text-[28px] cursor-pointer flex items-center font-bold">
             <span className="py-0.5 px-2 bg-blue-primary rounded-md mr-2 text-2xl">V</span>
             Vitor
